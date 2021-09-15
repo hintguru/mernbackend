@@ -1,0 +1,51 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <title>Profile</title>
+    <style>
+        *{
+           margin: 0%;
+           padding: 0%;
+           box-sizing: border-box;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{color: white;}
+        button{
+            background-image: linear-gradient(120deg, #c2e9fb 0%, #a1c4fd 100%);
+            border: none;
+            outline: none;
+            margin-top: 30px;
+        }
+        h1{
+            text-transform: capitalize;
+            color:white;
+            font-family: 'Poiret One', cursive;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="profile">
+    <h1>Hi {{name}}</h1>
+    <img src="{{picture}}" style="border-radius: 50%;" alt="">
+    <button><a href="/logout">Sign Out</a></button>
+</div>
+</body>
+</html>
